@@ -25,19 +25,19 @@ int attack(char p1,char p2,char p3,char p4,int mana) {
 }
 int def(char p1,char p2,char p3,char p4,int mana) {
     if((p1=='7'||p2=='7'||p3=='7'||p4=='7')&&mana>=8) {
-        printf("1 7 9 9\n0\n");
+        printf("1 7 4 11\n0\n");
         return 1;
     }
     if((p1=='4'||p2=='4'||p3=='4'||p4=='4')&&mana>=6) {
-        printf("1 4 9 9\n0\n");
+        printf("1 4 4 11\n0\n");
         return 1;
     }
     if((p1=='9'||p2=='9'||p3=='9'||p4=='9')&&mana>=3) {
-        printf("1 9 9 9\n0\n");
+        printf("1 9 4 11\n0\n");
         return 1;
     }
     if((p1=='5'||p2=='5'||p3=='5'||p4=='5')&&mana>=1) {
-        printf("1 5 9 9\n0\n");
+        printf("1 5 4 11\n0\n");
         return 1;
     } else {
         return 0;
