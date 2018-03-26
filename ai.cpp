@@ -4,23 +4,22 @@
 #include<cstdlib>
 using namespace std;
 int attack(char p1,char p2,char p3,char p4,int mana) {
-	int x,y;
-	if(mana<8)
-	{
-		
-    	if((p1=='9'||p2=='9'||p3=='9'||p4=='9')&&mana>=3) {
-			x=(rand()%4)+15;
-			y=(rand()%6)+1;
-        	printf("1 9 x y\n0\n");
-        	return 1;
-    	}
-    	if((p1=='5'||p2=='5'||p3=='5'||p4=='5')&&mana>=1) {
-			x=(rand()%4)+15;
-			y=(rand()%6)+1;
-        	printf("1 5 x y\n0\n");
-        	return 1;
-    	}
-	}
+    int x,y;
+    if(mana<8) {
+
+        if((p1=='9'||p2=='9'||p3=='9'||p4=='9')&&mana>=3) {
+            x=(rand()%4)+15;
+            y=(rand()%6)+1;
+            printf("1 9 x y\n0\n");
+            return 1;
+        }
+        if((p1=='5'||p2=='5'||p3=='5'||p4=='5')&&mana>=1) {
+            x=(rand()%4)+15;
+            y=(rand()%6)+1;
+            printf("1 5 x y\n0\n");
+            return 1;
+        }
+    }
     if((p1=='7'||p2=='7'||p3=='7'||p4=='7')&&mana>=8) {
         printf("1 7 17 24\n0\n");
         return 1;
